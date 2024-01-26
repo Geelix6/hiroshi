@@ -1,0 +1,45 @@
+.team {
+  background-color: var(--color-light-alternate);
+
+  &__grid {
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 160px 40px;
+    margin-inline: auto;
+
+    &-cell {
+      &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &-people {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 45px;
+      }
+
+      &-subtitle {
+        margin-bottom: 50px;
+      }
+
+      &-soc1als {
+        display: flex;
+        column-gap: 19px;
+      }
+
+      &-jobs {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-dark-alternate);
+        line-height: 1.6875;
+      }
+    }
+  }
+}

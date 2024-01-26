@@ -1,0 +1,85 @@
+.hero {
+  height: 100svh;
+  max-height: 1080px;
+
+  &__container {
+    max-width: 1920px;
+    height: 100%;
+    margin-inline: auto;
+  }
+
+  &__slider {
+    position: relative;
+    height: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin-inline: auto;
+
+    &-slide {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: var(--color-light);
+
+      &-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      &:nth-child(1) {
+        background-image: url(../images/hero/1.jpg);
+        @media (max-width: 992px) and (orientation: portrait) {
+          background-image: url(../images/hero/1-992.jpg);
+        }
+      }
+      &:nth-child(2) {
+        background-image: url(../images/hero/2.jpg);
+        @media (max-width: 992px) and (orientation: portrait) {
+          background-image: url(../images/hero/2-992.jpg);
+        }
+      }
+      &:nth-child(3) {
+        background-image: url(../images/hero/3.jpg);
+        @media (max-width: 992px) and (orientation: portrait) {
+          background-image: url(../images/hero/3-992.jpg);
+        }
+      }
+      &:nth-child(4) {
+        background-image: url(../images/hero/4.jpg);
+        @media (max-width: 992px) and (orientation: portrait) {
+          background-image: url(../images/hero/4-992.jpg);
+        }
+      }
+
+      &-description {
+        position: absolute;
+        bottom: 90px;
+        right: 130px;
+        text-align: right;
+
+        &-title {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-pagination {
+      position: absolute !important;
+      left: 43px !important;
+      width: auto !important;
+
+      &-bullet {
+        --bullet-height: 30px;
+
+        width: 42px;
+        height: var(--bullet-height);
+        padding-block: calc((var(--bullet-height) - 2px) / 2);
+        border-radius: unset;
+        background-clip: content-box;
+        background-color: #fff;
+        opacity: 0.5;
+      }
+    }
+  }
+}

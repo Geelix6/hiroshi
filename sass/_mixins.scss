@@ -1,0 +1,8 @@
+@mixin small-circle($color: var(--color-dark)) {
+  display: block;
+  height: 4px;
+  width: 4px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: $color;
+}

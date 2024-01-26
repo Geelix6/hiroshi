@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  padding-top: 40px;
+  padding-inline: 50px;
+
+  &__navbar-list {
+    margin-block: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    color: var(--color-light);
+
+    &-item {
+      position: relative;
+
+      &:first-child::before {
+        content: "";
+        position: absolute;
+        top: -15%;
+        left: -6px;
+        display: block;
+        width: 1px;
+        height: 30px;
+        background-color: var(--color-light);
+      }
+
+      &-link:hover {
+        @media (hover: hover) {
+          color: black;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  &__user-profile {
+    width: 30px;
+    height: 30px;
+
+    &-image {
+      clip-path: circle(50%);
+    }
+  }
+}

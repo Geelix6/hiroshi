@@ -1,0 +1,20 @@
+// @mixin flex-center($a: inline-flex, $d: 1px){
+//     display: $a;
+//     align-items: center;
+//     justify-content: center;
+//     gap: $d;
+// }
+
+// body{
+//     @include flex-center($d: 10px, $a: grid);
+//     margin: 0;
+//     background-color: #793030;
+//     @media (max-width: 1000px) {
+//         background: #000;
+//     }
+// }
+
+@import "normalize", "fonts", "variables", "mixins", "globals", "utils";
+
+@import "blocks/header", "blocks/hero", "blocks/studio", "blocks/works", "blocks/annotation", "blocks/team",
+  "blocks/comments", "blocks/interviews", "blocks/contact", "blocks/footer", "media";

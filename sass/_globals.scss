@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+a {
+  transition-duration: var(--transition-duration);
+}
+
+ul {
+  padding-left: 0;
+  margin-block: 0;
+}
+
+li {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+svg * {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block: 0;
+  font-family: var(--font-family-alternate);
+  font-weight: 400;
+}
+
+p {
+  margin-block: 0;
+}
+
+/* если за параграфом идет контент, то он толкает его вниз */
+p:not([class]):not(:last-child) {
+  margin-bottom: 1em;
+}
